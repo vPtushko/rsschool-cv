@@ -1,1 +1,149 @@
-<!--Code here-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Violetta Ptushko</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav">
+                        <a href="#personal" class="nav-item">Personal</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#experience" class="nav-item">My experience</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="profile">
+                <div class="grid">
+                    <div class="text">
+                        <h1 id="great-text">
+                            Hello! <br> I'm Violetta Ptushko,<br>
+                            nice to see you!
+                        </h1>
+                        <p class="description">
+                            Junior Front-end Developer
+                        </p>
+                        <p class="credo">
+                           - "I strive to get better every day"
+                        </p>
+                    </div>
+                    <div class="img">
+                        <img src="assets/img/p.jpg" alt="my photo" id="photo">
+                    </div>
+                </div>
+            </section>
+            <section class="personal" id="personal">
+                <div class="title">
+                    <h2>Personal information</h2>
+                </div>
+                <div class="contact">
+                    <div class="circle"><p class="contact-title">Contacts</p></div>
+                    <ul class="contact-list">
+                        <li class="contact_item">Phone: +375(29)218-4026</li>
+                        <li class="contact_item">Mail: <a style="color: black"></a>violettaptushko@yandex.by</li>
+                        <li class="contact_item">Telegram: <a style="color: black"></a>@Viola2184026</li>
+                        <li class="contact_item">LinkedIn: <a style="color: black" href="http://linkedin.com/in/violetta-ptushko-18932520b">Violetta Ptushko</a></li>
+                        <li class="contact_item">Discord: <a style="color: black"></a>Violetta Ptushko(git - vPtushko)#7008</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="experience" id="experience">
+                <div class="title">
+                    <h2>My experience</h2>
+                </div>
+                <div class="my-skills">
+                    <div class="skills">
+                        <p class="skills-text">Skills</p>
+                        <ul class="list">
+                            <li>HTML5/CSS3</li>
+                            <li>JS/ES5/ES6</li>
+                            <li>jQuery</li>
+                            <li>Figma</li>
+                            <li>MySQL</li>
+                            <li>GIT</li>
+                            <li>Python</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div class="personality">
+                        <p class="skills-text p">Personality</p>
+                        <ul class="list">
+                            <li>Communicative</li>
+                            <li>Creativity</li>
+                            <li>Honest</li>
+                            <li>Flexible</li>
+                            <li>Ingenious</li>
+                            <li>Enthusiastic</li>
+                            <li>Organized</li>
+                            <li>Willing to learn new things</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="code-title">
+                        <p>Code example</p>
+                    </div>
+                    <p class="text-code">Write a function that accepts an array of 10 integers (between 0 and 9),
+                        that returns a string of those numbers in the form of a phone number</p>
+                    <p class="ex">Example</p>
+                    <pre class="code-1">
+                        <code>
+                            createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"</code>
+                    </pre>   
+                    <p class="ex">Code</p> 
+                    <pre class="code-2">
+                        <code>
+                            var number = "(xxx) xxx-xxxx";
+  
+                            for(var i = 0; i < numbers.length; i++)
+                            {
+                              number = number.replace('x', numbers[i]);
+                            }
+                            return number;
+                            }
+                            console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));</code>
+                    </pre>
+                    <div class="education">
+                        <div class="education-title">
+                            <p>Education</p>
+                        </div>
+                        <p class="education-text">
+                            2019-2023 / Minsk Radioengineering College / Information technology software
+                        </p>
+                        <p class="education-text">Now / RS PreSchool / Front-end </p>
+                    </div>
+                    <div class="languages">
+                        <div class="languages-title">
+                            <p>Languages</p>
+                        </div>
+                        <ul class="languages-list">
+                            <li>Russian - Native</li>
+                            <li>English - Intermediate (B1)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="info">
+                <a href="https://github.com/vPtushko" class="github" id="github"><img src="assets/img/git.png" class="git"></a>
+                <h2 class="year">2022</h2>
+                <a href="https://rs.school/js-stage0/" class="rs-school"><img src="assets/img/rs.svg" class="rs"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
