@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Magra:wght@700&family=Red+Hat+Text:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Document</title>
+    <link rel="icon" href="assets/img/Vector.png" type="image/png">
+    <title>Travel Portal</title>
 </head>
 <body>
     <div class="container">
@@ -16,7 +20,8 @@
             <div class="container">
                 <nav>
                     <div class="logo">
-
+                        <img src="assets/svg/Vector.svg">
+                        Travel Portal
                     </div>
                     <ul class="navbar">
                         <li><a href="#" class="navbar-item">How It Works</a></li>
@@ -33,24 +38,109 @@
         <main>
             <div class="container">
                 <section class="preview">
-                    <div class="container">
-        
+                    <div class="container-preview">
+                        <h1 class="explore-text">Explore the beauty of the World</h1>
+                        <h2 class="receive-text">Receive personalized recommendations for countries, hotels, activities and more</h2>
+                        <form action="" method="get">
+                            <input class="search" name="s" placeholder="What would you like to do?" type="search">
+                            <button type="submit" class="start">Start Planning</button>
+                        </form>
                     </div>
                 </section>
                 <section class="steps">
-        
+                    <div class="container-steps">
+                        <h2 class="three-steps">3 STEPS TO THE PERFECT TRIP</h2>
+                        <div class="three-steps-icon">
+                            <div class="step-1">
+                                <div class="restangle"><img src="assets/svg/bike.svg" alt="bike"></div>
+                                <p class="txt">Tell us what you want to do</p>
+                            </div>
+                            <div class="step-1">
+                                <div class="restangle"><img src="assets/svg/shedule.svg" alt="shedule"></div>
+                                <p class="txt">Share us preferable dates </p>
+                            </div>
+                            <div class="step-1">
+                                <div class="restangle"><img src="assets/svg/plain.svg" alt="plain"></div>
+                                <p class="txt">We will give you recommendations</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="destinations">
-        
+                    <div class="container-destinations">
+                        <h2 class="popular">POPULAR DESTINATIONS</h2>
+                    </div>
+                    <div class="carousel" data-flickity='{ "bgLazyLoad": true }'>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                        <div class="carousel-cell"></div>
+                    </div>
+                    <div class="btn-destinations-container">
+                        <button class="btn-destinations">Find More</button>
+                    </div>
                 </section>
                 <section class="stories">
-        
+                    <div class="container-stories">
+                        <h2 class="popular">TRAVEL STORIES</h2>
+                    </div>
+                    <div class="travel-stories">
+                        <div class="white">
+                            <article class="story-1">
+                                <img src="assets/img/story1.jpg" class="img-1">
+                                <div class="story-1-block">
+                                    <h2 class="story-title">10 Photos of Attractive Thailand</h2>
+                                    <h3 class="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <p class="p"><a href="#" class="read-more">Read More</a></p></h3>
+                                </div>
+                            </article>
+                            <article class="story-1">
+                                <img src="assets/img/story2.jpg" class="img-1">
+                                <div class="story-1-block">
+                                    <h2 class="story-title">Canyonlands National Park, Utah</h2>
+                                    <h3 class="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <p class="p"><a href="#" class="read-more">Read More</a></p></h3>
+                                </div>
+                            </article>
+                            <article class="story-1">
+                                <img src="assets/img/story3.jpg" class="img-1">
+                                <div class="story-1-block">
+                                    <h2 class="story-title">I left my heart in the Mountains!</h2>
+                                    <h3 class="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <p class="p"><a href="#" class="read-more">Read More</a></p></h3>
+                                </div>
+                            </article>
+                            <article class="story-1">
+                                <img src="assets/img/story4.jpg" class="img-1">
+                                <div class="story-1-block">
+                                    <h2 class="story-title">The Longest journey in my life!</h2>
+                                    <h3 class="story-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <p class="p"><a href="#" class="read-more">Read More</a></p></h3>
+                                </div>
+                            </article>
+                            <div class="btn-story-see-more">
+                                <button class="see-more">See More</button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </main>
         <footer>
-    
+            <div class="footer-container">
+                <h2 class="footer-text">All Rights Reserved © Travel Portal</h2>
+                <div class="links">
+                    <a href="https://github.com/vPtushko" class="link-git"></a>
+                    <a href="https://www.youtube.com/c/RollingScopesSchool/featured" class="link-youtube"></a>
+                    <a href="https://rs.school/js-stage0/" class="link-rs"></a>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="index.js"></script>
 </html>
