@@ -7,7 +7,7 @@ html{
 }
 
 .container{
-    width: 1445px;
+    width: 1440px;
     height: 3735px;
     margin: 0 auto;
 }
@@ -29,7 +29,7 @@ body{
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     height: 90px;
-    width: 1445px;
+    width: 1440px;
     position: absolute;
 }
 
@@ -313,6 +313,7 @@ input{
   .travel-stories{
     height: 1331px;
     background: url(assets/img/Rectangle\ 27.jpg);
+    background-repeat: no-repeat;
   }
 
   .white{
@@ -398,7 +399,7 @@ input{
   .footer-container{
     position: relative;
     display: flex;
-    margin-top: -28.5px;
+    margin-top: 17px;
     align-items: center;
     justify-content: center;
     gap: 300px;
