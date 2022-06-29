@@ -2,8 +2,13 @@
     box-sizing: border-box; 
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .container{
-    width: 1440px;
+    width: 1445px;
+    height: 3735px;
     margin: 0 auto;
 }
 
@@ -24,6 +29,7 @@ body{
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     height: 90px;
+    width: 1445px;
     position: absolute;
 }
 
@@ -66,6 +72,13 @@ nav{
     font-size: 16px;
 }
 
+.navbar-item:hover{
+  text-decoration: overline;
+  color: #FFFFFF;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
 .login{
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -81,6 +94,7 @@ nav{
 
 .btn:hover{
   background: transparent;
+  transition-duration: .5s;
 }
 .container-preview{
     position: absolute;
@@ -91,6 +105,7 @@ nav{
 
 .start:hover{
   background: #F2785C;
+  transition-duration: .5s;
 }
 
 .explore-text {
@@ -142,10 +157,12 @@ input::-webkit-input-placeholder {
 
 .btn-destinations:hover{
   background: #F2785C;
+  transition-duration: .5s;
 }
 
 .see-more:hover{
   background: #F2785C;
+  transition-duration: .5s;
 }
 input{
     border: none;
@@ -233,7 +250,8 @@ input{
   .carousel-cell {
     width: 800px;
     height: 800px;
-    margin-right: 10px;
+    margin-top: 46px;
+    margin-right: 60px;
     border-radius: 16px;
     background-position: center center;
     background-size: cover;
@@ -341,6 +359,12 @@ input{
     height: 250px;
   }
 
+  .img-1:hover{
+    width: 420px;
+    height: 270px;
+    transition: 1s;
+  }
+
   .story-1-block{
     margin-left: 560px;
   }
@@ -374,7 +398,7 @@ input{
   .footer-container{
     position: relative;
     display: flex;
-    margin-top: -53px;
+    margin-top: -28.5px;
     align-items: center;
     justify-content: center;
     gap: 300px;
@@ -397,12 +421,12 @@ input{
 
   .link-git{
     content: url(assets/svg/git.svg);
-    width: 35px;
+    width: 30px;
   }
 
   .link-rs{
     content: url(assets/svg/rs.svg);
-    width: 60px;
+    width: 50px;
   }
 
   .links{
