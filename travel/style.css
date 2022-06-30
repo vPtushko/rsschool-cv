@@ -23,6 +23,7 @@ body{
     margin: 0;
     flex-direction: column;
     display: flex;
+    background:#FFFFFF;
 }
 
 .header{
@@ -53,7 +54,7 @@ a{
 nav{
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 186px;
     align-items: center;
     margin-top: 20px;
 }
@@ -99,7 +100,7 @@ nav{
 .container-preview{
     position: absolute;
     margin-left: 120px;
-    margin-top: 122px;
+    margin-top: 32px;
     height: 422px;
 }
 
@@ -216,7 +217,7 @@ input{
     display: flex;
     gap: 200px;
     height: 154px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .container-steps{
@@ -240,17 +241,12 @@ input{
 .container-destinations{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 97px;
 }
-
-/* .carousel {
-    background: #FAFAFA;
-  } */
   
   .carousel-cell {
     width: 800px;
     height: 800px;
-    margin-top: 46px;
     margin-right: 60px;
     border-radius: 16px;
     background-position: center center;
@@ -273,7 +269,6 @@ input{
     background: #F2785C;
     width: 20px;
     height: 20px;
-    margin: -30px 8px;
   }
 
   .btn-destinations{
@@ -284,7 +279,7 @@ input{
     padding: 10px 32px;
     gap: 10px;
     margin-left: 607px;
-    margin-top: 100px;
+    margin-top: 40px;
     width: 228px;
     height: 59px;
     background: #0D606F;
@@ -307,7 +302,11 @@ input{
   .container-stories{
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
+  }
+
+  element.style{
+    height: 823px;
   }
 
   .travel-stories{
