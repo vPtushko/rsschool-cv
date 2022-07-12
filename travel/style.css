@@ -7,8 +7,6 @@ html{
   overflow: scroll;
 }
 
-
-
 .preview{
     background-image: url(assets/img/garrett-parker.jpg);
     height: 765px;
@@ -429,10 +427,10 @@ input{
   gap: 24px;
 }
 
-@media (max-width: 391px) {
+@media (min-width: 390px) and (max-width: 768px) {
 
   html{
-    overflow: hidden;
+    overflow: scroll;
   }
   .container{
     width: 390px;
@@ -458,6 +456,8 @@ input{
     width: 30px;
     height: 30px;
     color: transparent;
+    position: absolute;
+    left: 20px;
   }
 
   .explore-text, .receive-text{
@@ -598,6 +598,8 @@ img[alt="plain"]{
   padding: 10px 20px;
   gap: 6px;
   font-size: 11px;
+  position: relative;
+  left: -40px;
 }
 
 .btn-destinations-container{
@@ -691,5 +693,251 @@ img[alt="plain"]{
   display: none;
 }
 
+.hamb {
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
 }
 
+.hamb__field {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 6px auto;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.popup {
+  position: fixed;
+  top: 75px;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  transition: 0.3s;
+}
+
+.popup.open {
+  left: 0;
+}
+
+.popup .navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 50px 0;
+  overflow: auto;
+}
+
+.popup .navbar > li {
+  width: 100%;
+}
+
+.popup .navbar > li > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+.popup .navbar > li > a:hover {
+  background-color: rgba(122, 82, 179, 0.1);
+}
+
+.hamb__field.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamb__field.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamb__field.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+
+  .container{
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .header{
+    width: 100%;
+  }
+  .preview{
+    width: 1024px;
+  }
+
+  .logo{
+    font-size: 25px;
+    width: 230px;
+  }
+
+  nav{
+    gap: 10px;
+    position: relative;
+  }
+
+  .container-preview{
+    margin-left: 30px;
+  }
+
+  img[alt="bike"]{
+    width: 40px;
+    height: 40px;
+  }
+  
+  img[alt="shedule"]{
+    width: 40px;
+    height: 40px;
+  }
+  
+  img[alt="plain"]{
+    width: 40px;
+    height: 40px;
+  }
+
+  .three-steps-icon{
+    gap: 50px;
+  }
+
+  .btn-destinations{
+    margin-left: 400px;
+  }
+
+  .img-1{
+    width: 300px;
+    height: 200px;
+    left: 20px;
+  }
+
+  .story-1-block{
+    margin-left: 350px;
+  }
+
+  .story-text{
+    width: 600px;
+  }
+
+  .footer-text{
+    margin-left: 300px;
+  }
+
+  .footer-container{
+    gap: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .container{
+    width: 768px;
+    margin: 0 auto;
+  }
+  .header{
+    width: 768px;
+  }
+
+  .preview{
+    width: 768px;
+  }
+
+  .explore-text{
+    font-size: 60px;
+    width: 600px;
+  }
+
+  .container-preview{
+    margin-top: 70px;
+  }
+
+  form{
+    width: 692px;
+  }
+
+  .plan{
+    font-size: 20px;
+    width: 140px;
+  }
+
+  .start{
+    margin-left: -100px;
+  }
+
+  .login{
+    width: 80px;
+  }
+  .logo{
+    font-size: 20px;
+    width: 150px;
+  }
+ 
+  nav{
+    gap:1px;
+  }
+
+  .three-steps-icon{
+    gap: 20px;
+  }
+
+  img[alt="bike"]{
+    width: 30px;
+    height: 30px;
+  }
+  
+  img[alt="shedule"]{
+    width: 30px;
+    height: 30px;
+  }
+  
+  img[alt="plain"]{
+    width: 30px;
+    height: 30px;
+  }
+
+  .txt{
+    font-size: 16px;
+  }
+
+  .carousel-cell{
+    width: 600px;
+    height: 600px;
+  }
+
+  .btn-destinations{
+    margin-left: 270px;
+  }
+
+  .story-text{
+    font-size: 16px;
+    width: 400px;
+  }
+
+  .story-title{
+    font-size: 28px;
+  }
+
+  .footer-text{
+    margin-left: 230px;
+  }
+
+  .footer-container{
+    gap: 30px;
+  }
+}
