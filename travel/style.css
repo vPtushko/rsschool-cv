@@ -770,10 +770,10 @@ img[alt="plain"]{
 }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (min-width: 1024px) and (max-width: 1439px){
 
   .container{
-    width: 1024px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -781,7 +781,7 @@ img[alt="plain"]{
     width: 100%;
   }
   .preview{
-    width: 1024px;
+    width: 100%;
   }
 
   .logo{
@@ -847,15 +847,15 @@ img[alt="plain"]{
 @media (min-width: 768px) and (max-width: 1024px){
 
   .container{
-    width: 768px;
+    width: 100%;
     margin: 0 auto;
   }
   .header{
-    width: 768px;
+    width: 100%;
   }
 
   .preview{
-    width: 768px;
+    width: 100%;
   }
 
   .explore-text{
