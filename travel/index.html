@@ -22,31 +22,68 @@
                     <img src="assets/svg/Vector.svg" alt="portal-logo">
                     Travel Portal
                 </div>
-                <div class="hamb">
-                    <div class="hamb__field" id="hamb">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                </div>
                 <ul class="navbar" id="menu">
                     <li><a href="#how" class="navbar-item">How It Works</a></li>
                     <li><a href="#plan" class="navbar-item">Plan Your Trip</a></li>
                     <li><a href="#des" class="navbar-item">Destinations</a></li>
                     <li><a href="#story" class="navbar-item">Travel Stories</a></li>
+                    <li><a href="#account" class="navbar-item account" onclick="openForm()">Account</a></li>
+                    <li><a href="#social" class="navbar-item social">Social Media</a></li>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
                 </ul>
                 <div class="btn">
-                    <button class="btn login">Login</button>
+                    <button class="btn login" id="login" onclick="openForm(); close()">Login</button>
                 </div>
             </nav>
-            <div class="popup" id="popup"></div>
+            <div class="header__burger burger" onclick="burger()">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </div>
+            <div class="login__popUp" id="form">
+                <form class="form__popUp">
+                    <fieldset class="fieldset__popUp">
+                        <p class="title__popUp tp">Log in to your account</p>
+                        <button class="button__signIn"><img src="/travel/assets/svg/Facebook Logo.svg"><p class="facebook">Sign In with Facebook</p></button>
+                        <button class="button__signIn"><img src="/travel/assets/svg/Google Logo.svg"><p class="google">Sign In with Google</p></button>
+                        <span class="popUp__line-1"></span>
+                        <p class="or">or</p>
+                        <span class="popUp__line-2"></span>
+                        <label class="label">E-mail</label>
+                        <input type="email" class="input">
+                        <label class="label password">Password</label>
+                        <input type="password" class="input pas">
+                        <button class="button__sign"><p class="txt__signIn">Sign In</p></button>
+                        <p class="forgot">Forgot Your Password?</p>
+                        <span class="popUp__line-3"></span>
+                        <p class="register">Don’t have an account? <u onclick="create()">Register</u></p>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="login__signUp" id="reg">
+                <form class="form__signUp">
+                    <fieldset class="fieldset__signUp">
+                        <p class="title__popUp t">Create account</p>
+                        <label class="label l">E-mail</label>
+                        <input type="email" class="input e">
+                        <label class="label password lp">Password</label>
+                        <input type="password" class="input pas p">
+                        <button class="button__sign b"><p class="txt__signIn">Sign Up</p></button>
+                        <span class="popUp__line-3 li"></span>
+                        <p class="register r">Already have an account? <u onclick="logIn()">Log in</u></p>
+                    </fieldset>
+                </form>
+            </div>
         </header>
         <main>
             <section class="preview" id="how">
                 <div class="container-preview">
                     <h1 class="explore-text">Explore the beauty of the World</h1>
                     <h2 class="receive-text">Receive personalized recommendations for countries, hotels, activities and more</h2>
-                    <form method="get">
+                    <form method="get" class="form">
                         <input class="search" name="s" placeholder="What would you like to do?" type="search">
                         <button type="submit" class="start"><p class="plan">Start Planning</p></button>
                     </form>
@@ -140,7 +177,7 @@
             </div>
         </footer>
     </div>
-    <script src="index.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

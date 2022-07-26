@@ -1,39 +1,37 @@
-const hamb = document.querySelector("#hamb");
-const popup = document.querySelector("#popup");
-const body = document.body;
- 
-// Клонируем меню, чтобы задать свои стили для мобильной версии
-const menu = document.querySelector("#menu").cloneNode(1);
- 
-// При клике на иконку hamb вызываем ф-ию hambHandler
-hamb.addEventListener("click", hambHandler);
- 
-// Выполняем действия при клике ..
-function hambHandler(e) {
-  e.preventDefault();
-  // Переключаем стили элементов при клике
-  popup.classList.toggle("open");
-  hamb.classList.toggle("active");
-  body.classList.toggle("noscroll");
-  renderPopup();
-}
- 
-// Здесь мы рендерим элементы в наш попап
-function renderPopup() {
-  popup.appendChild(menu);
-}
- 
-// Код для закрытия меню при нажатии на ссылку
-const links = Array.from(menu.children);
- 
-// Для каждого элемента меню при клике вызываем ф-ию
-links.forEach((link) => {
-  link.addEventListener("click", closeOnClick);
-});
- 
-// Закрытие попапа при клике на меню
-function closeOnClick() {
-  popup.classList.remove("open");
-  hamb.classList.remove("active");
-  body.classList.remove("noscroll");
-}
+// (function(){
+//     const header = document.querySelector('.header');
+//     window.onscroll = () => {
+//         if (window.pageYOffset > 50){
+//             header.classList.add('header_active');
+//         } else {
+//             header.classList.remove('header_active');
+//         }
+//     };
+// }());
+
+function burger (){
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.navbar');
+    const menuCloseItem = document.querySelector('.header__nav-close');
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('navbar_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('navbar_active');
+    });
+};
+
+
+function openForm(){
+    document.getElementById("form").style.display="block";
+};
+
+function create(){
+    document.getElementById("reg").style.display="block";
+    document.getElementById("form").style.display="none";
+};
+
+function logIn(){
+    document.getElementById("form").style.display="block";
+    document.getElementById("reg").style.display="none";
+};
